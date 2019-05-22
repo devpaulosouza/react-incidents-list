@@ -1,0 +1,9 @@
+.App-header {
+    padding: 15px;
+    background: white;
+    border-bottom: 1px solid #000
+}
+
+.logo__img {
+    max-width: 150px;
+}
