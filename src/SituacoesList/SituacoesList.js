@@ -11,55 +11,14 @@ class SituacoesList extends Component {
       emptyList: '',
       filteredItems: [],
       displayItems: 2,
-      // data: [
-      //   {
-      //     nome: 'Andamento',
-      //     desc: 'Quando o contrato está em andamento e pode ser alterado'
-      //   },
-      //   {
-      //     nome: 'Finalizado',
-      //     desc: 'Quando o contrato foi atendido e não pode ser modificado'
-      //   },
-      //   {
-      //     nome: 'Andamento',
-      //     desc: 'Quando o contrato está em andamento e pode ser alterado'
-      //   },
-      //   {
-      //     nome: 'Andamento',
-      //     desc: 'Quando o contrato está em andamento e pode ser alterado'
-      //   },
-      //   {
-      //     nome: 'Finalizado',
-      //     desc: 'Quando o contrato foi atendido e não pode ser modificado'
-      //   },
-      //   {
-      //     nome: 'Andamento',
-      //     desc: 'Quando o contrato está em andamento e pode ser alterado'
-      //   },
-      //   {
-      //     nome: 'Andamento',
-      //     desc: 'Quando o contrato está em andamento e pode ser alterado'
-      //   },
-      //   {
-      //     nome: 'Finalizado',
-      //     desc: 'Quando o contrato foi atendido e não pode ser modificado'
-      //   },
-      //   {
-      //     nome: 'Andamento',
-      //     desc: 'Quando o contrato está em andamento e pode ser alterado'
-      //   },
-      //   {
-      //     nome: 'Último',
-      //     desc: 'Quando o contrato está em andamento e pode ser alterado'
-      //   },
-      // ]
+      data: this.props.data,
     }
 
     this.handleFilter = this.handleFilter.bind(this);
     this.handleDisplayItems = this.handleDisplayItems.bind(this);
   }
 
-  componentWillMount() {
+  componentDidMount() {
     this.setState({
       filteredItems: this.props.data
     })

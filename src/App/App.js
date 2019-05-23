@@ -57,17 +57,10 @@ class App extends Component {
     }
   }
 
-  handleSave(e) {
-    e.preventDefault()
-
-    let nome = document.querySelector('[data-js="nome"]').value
-    let desc = document.querySelector('[data-js="desc"]').value
-
+  handleSave(nome, desc) {
     this.setState(prevData =>({
-      data: [{nome: nome, desc: desc}, ...prevData.data]
+      data: [{nome, desc}, ...prevData.data]
     }))
-
-    console.log(this.state.data)
   }
 
   render() {
